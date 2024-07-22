@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+</head>
+<style>
+    body{
+        background-image: url('bgimg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        font-family: sans-serif;
+        font-size: large;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    header{
+        color: white;
+        padding: 3em;
+        text-align: center;
+        margin: 10px 20px;
+    }
+    header img {
+    border-radius: 50%; /* Makes the image round */
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    object-fit: cover; /* Ensures the image fits within the specified dimensions */
+    margin-bottom: 5em;
+    float: right;
+    margin-top: -5em;
+    margin-left: 300px; /* Adjust this value to move the image further right */
+    transition: transform 0.5s ease;
+}
+header img:hover {
+    transform: scale(1.5); /* Scale the image by 10% on hover */
+}
+
+    nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0 10px;
+        margin-top: 50px;
+        font-size: larger;
+        font-weight: bold;
+        font-size: larger;
+    }
+    nav ul li{
+        display: inline;
+        text-decoration: none;
+        margin-right: 20px;
+        
+    }
+    nav ul li a{
+        color: white;
+        padding: 8px 12px; /* Adjust padding for better click area */
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    nav ul li a:hover{
+        text-decoration: underline;
+        color: black;
+        background-color: #b48f8f;
+    }
+    nav ul li a:active {
+            background-color: #686e74; /* Blue background when link is clicked */
+            color: white; /* White text color when link is clicked */
+            transform: rotate(360deg); /* Rotate 360 degrees when clicked */
+        }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">SERVICES</a></li>
+            </ul>
+           <img src="logo.png" alt="logo" srcset="">
+        </nav>
+    </header>
+</body>
+
+</html>

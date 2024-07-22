@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+    body{
+        background-image: url('port.bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        font-family: sans-serif;
+        font-size: large;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    header{
+        text-align: center;
+        font-size: larger;
+        margin-top: 50px;
+    }
+    #about{
+        text-align: center;
+        color: white;
+ }
+ #skills h1{
+    color:black;
+    text-align: center;
+   font-size: 2em;
+ }
+ #skills ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox to display items inline */
+    flex-wrap: wrap; /* Allow items to wrap to next line if necessary */
+    justify-content: center; /* Center align the items */
+}
+#skills ul {
+                list-style-type: none;
+                padding: 0;
+            }
+           #skills ul li {
+                display: inline;
+                margin: 0 10px;
+                color: white
+            }
+#connect h2{
+    color:black;
+    text-align: center;
+   font-size: 2em;
+}
+#connect p{
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: medium;
+            cursor: pointer;
+            float: right;
+        }
+</style>
+<body>
+    <header>
+        <h1>ABOUT ME</h1>
+    </header>
+    <section id="about">
+       <p>
+            With a strong foundation in HTML, CSS, and JavaScript, I am dedicated to creating intuitive and visually appealing digital experiences. <br>
+             I am currently interning at Codic solutions and CETQAP, where I am expanding my expertise in web development. My journey as a developer is driven by a passion for transforming ideas into engaging websites and applications that enhance user experience and streamline functionality. <br>
+            Apart from my technical skills, I am actively involved in my university's Entertainment Club as the Secretary of Sponsorship. This role has equipped me with excellent organizational and communication skills.
+        </p>
+    </section> 
+    <section id="skills">
+           <h1>My Skills:</h1> 
+           <ul>
+                <li> <strong>Front-End Development:</strong> Proficient in HTML, CSS, and JavaScript.</li>
+                <li><strong>Responsive Design:</strong>Creating websites that look great on all devices.</li>
+                <li><strong>Project Management: </strong>Balancing multiple tasks and deadlines efficiently.</li>
+                <li><strong>Communication:</strong> Collaborating effectively with teams and stakeholders.</li>
+            </ul>
+            </section>
+            <section id="connect">
+                <h2 >Let's Connect</h2>
+               <p> I'm always eager to take on new challenges and collaborate on exciting projects. Feel free to explore my portfolio and reach out to discuss how we can work together to bring your vision to life. 
+            </p>
+            </section>
+            <a href="projects.html"></a>
+            <button onclick="showAboutMe()">Projects</button>
+            <script>
+               function showAboutMe() {
+                window.location.href = 'projects.html';
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            background-image: url('port.bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            color: white;
+            overflow-x: hidden;
+        }
+        #services {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #services h2 {
+            font-size: 40px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+        }
+        #services p {
+            font-size: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        p:nth-child(3) {
+            animation-delay: 1s;
+        }
+        h2:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+        p:nth-child(5) {
+            animation-delay: 2s;
+        }
+        h2:nth-child(6) {
+            animation-delay: 2.5s;
+        }
+        p:nth-child(7) {
+            animation-delay: 3s;
+        }
+        h2:nth-child(8) {
+            animation-delay: 3.5s;
+        }
+        p:nth-child(9) {
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+<body>
+    <section id="services">
+        <h2>
+            Custom Website Development:
+        </h2>
+        <p>
+            Building responsive and visually appealing websites tailored to clients' needs using HTML, CSS, and JavaScript.
+        </p>
+        <h2>
+            Responsive Design:
+        </h2>
+        <p>
+            Ensuring websites are fully responsive and optimized for all devices, from desktops to mobile phones.
+        </p>
+        <h2>
+            Website Redesign and Optimization:
+        </h2>
+        <p>
+            Enhancing existing websites with modern design practices and optimizing for better performance and user experience.
+        </p>
+        <h2>
+            Code Review and Consulting:
+        </h2>
+        <p>
+            Providing code reviews, front-end consulting, and best practice recommendations for development projects.
+        </p>
+    </section>
+</body>
+</html>
